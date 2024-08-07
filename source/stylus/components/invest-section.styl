@@ -1,0 +1,112 @@
+.invest-section
+  background-image: url('../images/invest-section-bg.jpg')
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  background-color #F7F7F7
+
+  &__container
+    text-align: center
+    padding 20px 0 20px 0
+    +above($breakpoints.sm)
+      padding 50px 0 50px 0
+    +above($breakpoints.md)
+      padding 80px 0 80px 0
+    +above($breakpoints.xxl)
+      padding 120px 0 120px 0
+
+  &__sub-title
+    padding 20px 0 30px 0
+    +above($breakpoints.sm)
+      padding 30px 0 40px 0
+    +above($breakpoints.md)
+      padding 35px 0 50px 0
+    +above($breakpoints.xxl)
+      padding 40px 0 70px 0
+
+  &__cards
+    +above($breakpoints.sm)
+      display: flex
+      flex-direction: row
+      justify-content space-between
+
+  &__card
+    width 280px !important
+    +above($breakpoints.sm)
+      width 235px !important
+    +above($breakpoints.md)
+      width 315px !important
+    +above($breakpoints.xxl)
+      width 360px !important
+
+  &__card-img
+    width 260px
+    height: auto
+    border-radius: 20px
+    +above($breakpoints.sm)
+      width 215px
+    +above($breakpoints.md)
+      width 275px
+    +above($breakpoints.xxl)
+      width 320px
+
+
+  &__card-header
+    position relative
+    background-color #424241
+    border-top-left-radius: 20px
+    border-top-right-radius: 20px
+    padding 25px 0 20px 0
+    +above($breakpoints.md)
+      padding 44px 0 26px 0
+
+  &__card-num
+    position: absolute
+    top: -20px
+    left: 50%
+    transform: translateX(-50%)
+    width 40px
+    height: 40px
+    display: flex
+    justify-content center
+    align-items: center
+    background-color $color-yellow
+    border-radius: 50%
+    +above($breakpoints.md)
+      width 60px
+      height: 60px
+      top: -30px
+
+  &__card-body
+    padding 20px 10px 20px 10px
+    background-color #fff
+    border-bottom-left-radius: 20px
+    border-bottom-right-radius: 20px
+    +above($breakpoints.md)
+      padding 30px 20px 40px 20px
+
+  &__form
+    padding-top 20px
+    display: flex
+    flex-direction: column
+    gap: 10px
+    +above($breakpoints.md)
+      padding-top 30px
+
+.invest-item
+  height: 60px !important
+  +above($breakpoints.sm)
+    height: 70px !important
+  +above($breakpoints.md)
+    height: 75px !important
+  +above($breakpoints.xxl)
+    height: 80px !important
+
+.invest-item-btn
+  height: 60px !important
+  +above($breakpoints.sm)
+    height: 80px !important
+  +above($breakpoints.md)
+    height: 90px !important
+  +above($breakpoints.xxl)
+    height: 100px !important

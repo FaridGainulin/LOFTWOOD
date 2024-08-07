@@ -1,0 +1,41 @@
+section.finances-section
+  .wrapper
+    .finances-section__container
+      h2.finances-section__title.font-s-40.font-w-g-bold
+        | Основные цифры 
+        br.no-br
+        | франшизы
+      .swiper-finances
+        .finances-section__cards.swiper-wrapper
+          .finances-section__card.swiper-slide
+            img.finances-section__card-icon(src="images/finances-section-card-icon1.svg" loading="lazy" width="40" height="40" alt="icon")
+            .finances-section__card-title.font-w-bold.font-s-24 1 095 000 рублей
+            .font-w-regular.font-s-18 средний <br> размер вложений
+          .finances-section__card.swiper-slide
+            img.finances-section__card-icon(src="images/finances-section-card-icon2.svg" loading="lazy" width="40" height="40" alt="icon")
+            .finances-section__card-title.font-w-bold.font-s-24 715 000 рублей
+            .font-w-regular.font-s-18 средняя <br> ежемесячная прибыль
+          .finances-section__card.swiper-slide
+            img.finances-section__card-icon(src="images/finances-section-card-icon3.svg" loading="lazy" width="40" height="40" alt="icon")
+            .finances-section__card-title.font-w-bold.font-s-24 1 месяц
+            .font-w-regular.font-s-18 займет <br> открытие мастерской
+          .finances-section__card.swiper-slide
+            img.finances-section__card-icon(src="images/finances-section-card-icon4.svg" loading="lazy" width="40" height="40" alt="icon")
+            .finances-section__card-title.font-w-bold.font-s-24 44,9%
+            .font-w-regular.font-s-18 рентабельность <br> по чистой прибыли
+          .finances-section__card.swiper-slide
+            img.finances-section__card-icon(src="images/finances-section-card-icon5.svg" loading="lazy" width="40" height="40" alt="icon")
+            .finances-section__card-title.font-w-bold.font-s-24 4 месяца
+            .font-w-regular.font-s-18 средний <br> срок окупаемости
+          .finances-section__card.swiper-slide
+            img.finances-section__card-icon(src="images/finances-section-card-icon6.svg" loading="lazy" width="40" height="40" alt="icon")
+            .finances-section__card-title.font-w-bold.font-s-24 1 585 000 рублей
+            .font-w-regular.font-s-18 средняя ежемесячная <br> выручка
+        .finances-pagination.swiper-progress-finances
+      .font-w-regular.font-s-18.text-center Хотите получить детальные цифры <br> для вашего города и под ваш бюджет?
+      .finances-section__text.font-w-bold.font-s-40.text-center Скачайте финансовую <br> модель «LOFTWOOD»
+      form.finances-section__form(data-feedback-form)
+        input.input.finances-item(type="text" name="name" autocomplete="off" placeholder="Имя")
+        input.input.finances-item(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+        button.btn.finances-item(type="submit") Скачать
+      img.finances-section__img(src="images/finances-section-img.jpg" loading="lazy" width="1120" height="1384" alt="image")

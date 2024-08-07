@@ -1,0 +1,123 @@
+.steps-section
+  background-image: url('../images/steps-section-bg.jpg')
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  background-color #282828
+
+  &__container
+    position relative
+    padding 20px 0 20px 0
+    +above($breakpoints.sm)
+      padding 60px 0 60px 0
+    +above($breakpoints.md)
+      padding 80px 0 80px 0
+    +above($breakpoints.xxl)
+      padding 120px 0 120px 0
+
+  &__title
+    color: $color-white
+    padding 0 0 20px 0
+    +above($breakpoints.sm)
+      padding 0 0 30px 0
+    +above($breakpoints.md)
+      padding 0 0 35px 0
+    +above($breakpoints.xxl)
+      padding 0 0 40px 0
+
+  &__cards
+    +above($breakpoints.sm)
+      display: flex
+      flex-direction: row
+      flex-wrap: wrap
+      justify-content center
+      gap: 10px
+    +above($breakpoints.md)
+      gap 20px
+    +above($breakpoints.xxl)
+      gap 40px
+
+  &__card
+    width 280px !important
+    height: 120px
+    padding 20px 10px 20px 20px
+    border-radius: 20px
+    background-color #fff
+    display: flex
+    flex-direction: column
+    gap: 10px
+    +above($breakpoints.sm)
+      width 235px !important
+    +above($breakpoints.md)
+      width 308px !important
+      padding 40px 10px 38px 20px
+      height: 160px
+    +above($breakpoints.xxl)
+      height: 170px
+      width 360px !important
+
+  &__card-title
+    display: flex
+    flex-direction: row
+    align-items: center
+    gap: 10px
+
+  &__card-num
+    width 26px
+    height: 26px
+    background-color #000
+    border-radius: 50%
+    display: flex
+    align-items: center
+    justify-content center
+    color: $color-yellow
+    +above($breakpoints.xxl)
+      width 32px
+      height: 32px
+
+
+  &__bottom
+    position relative
+    text-align: center
+    width 100%
+    margin 20px auto 0
+    max-width: 300px
+    padding 20px 10px 20px 20px
+    border-radius: 20px
+    background-color $color-yellow
+    +above($breakpoints.sm)
+      max-width: 480px
+      text-align: start
+    +above($breakpoints.md)
+      margin 40px auto 0
+      padding 54px 10px 53px 20px
+      max-width: 636px
+    +above($breakpoints.xxl)
+      max-width: 760px
+
+  &__bottom-icon
+    display: none
+    +above($breakpoints.sm)
+      display: block
+      position: absolute
+      width 140px
+      height: auto
+      bottom: 0
+      right: 0
+    +above($breakpoints.md)
+      width 285px
+
+.steps-item
+  width 260px !important
+  height: 60px !important
+  margin 20px auto 0
+  +above($breakpoints.sm)
+    width 360px !important
+    height: 75px !important
+  +above($breakpoints.md)
+    margin 40px auto 0
+    width 360px !important
+    height: 85px !important
+  +above($breakpoints.xxl)
+    width 360px !important
+    height: 95px !important

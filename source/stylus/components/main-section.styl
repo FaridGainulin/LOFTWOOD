@@ -1,0 +1,95 @@
+.main-section
+  background-image: url('../images/main-section-bg.jpg')
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  background-color #282828
+
+  &__container
+    position relative
+    color: $color-white
+    padding 20px 0 20px 0
+    +above($breakpoints.sm)
+      padding 30px 0 80px 0
+    +above($breakpoints.md)
+      padding 35px 0 120px 0
+    +above($breakpoints.xxl)
+      padding 40px 0 181px 0
+
+  &__title,
+  &__sub-title
+    text-align: center
+    +above($breakpoints.sm)
+      text-align: start
+
+  &__title
+    padding 20px 0 0 0
+    +above($breakpoints.sm)
+      padding 40px 0 0 0
+    +above($breakpoints.md)
+      padding 70px 0 0 0
+    +above($breakpoints.xxl)
+      padding 96px 0 0 0
+
+  &__sub-title
+    padding 20px 0 20px 0
+    display: flex
+    flex-direction: row
+    align-items: flex-start
+    +above($breakpoints.sm)
+      gap: 20px
+      padding 30px  0 30px 0
+    +above($breakpoints.md)
+      padding 35px  0 35px 0
+    +above($breakpoints.xxl)
+      padding 40px 0 40px 0
+  
+  &__icon
+    width 22px
+    height: 18px
+    +above($breakpoints.sm)
+      width 44px
+      height: 37px
+
+  &__form
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 8px
+    width 100%
+    max-width: 420px
+    +above($breakpoints.sm)
+      align-items: flex-start
+    +above($breakpoints.md)
+      gap: 20px
+      flex-direction: row
+      flex-wrap: wrap
+
+  &__img
+    width 300px
+    height: auto
+    margin 20px auto 0
+    +above($breakpoints.sm)
+      margin 0
+      position: absolute
+      width: 392px;
+      bottom: 45px;
+      right: 0;
+    +above($breakpoints.md)
+      width: 500px;
+      bottom: 93px;
+      right: 0;
+    +above($breakpoints.xxl)
+      width: 640px;
+      bottom: 142px;
+      right: -46px;
+
+.main-item
+  width 280px !important
+  +above($breakpoints.md)
+    width 200px !important
+.main-item-btn
+  width 280px !important
+  +above($breakpoints.md)
+    width 420px !important
+

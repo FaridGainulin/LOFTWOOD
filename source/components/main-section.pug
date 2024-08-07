@@ -1,0 +1,28 @@
+section.main-section
+  .wrapper
+    .main-section__container
+      include ../components/header.pug
+      h1.main-section__title.font-w-g-bold.font-s-50
+        | Зарабатывайте 
+        br.no-br
+        span.color-yellow от 715 000 
+        | рублей ежемесячно 
+        br.no-br
+        | на 
+        span.font-w-g-medium производстве и продаже 
+        br.no-br
+        | мебели 
+        span.font-w-g-medium в стиле ЛОФТ
+      .main-section__sub-title
+        img.main-section__icon(src="images/main-section-sub-title-icon.svg" loading="lazy" width="44" height="37" alt="icon")
+        .font-w-regular.font-s-22
+          | Узнайте, как открыть столярную 
+          br.no-br
+          | мастерскую в вашем городе 
+          br.no-br
+          | за 1 месяц с франшизой «LOFTWOOD»
+      form.main-section__form(data-feedback-form)
+        input.input.main-item(type="text" name="name" autocomplete="off" placeholder="Имя")
+        input.input.main-item(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+        button.btn.main-item-btn(type="submit") Получить план открытия
+      img.main-section__img(src="images/main-section-img.png" loading="lazy" width="1280" height="1320" alt="image")

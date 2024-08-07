@@ -1,0 +1,41 @@
+section.invest-section
+  .wrapper
+    .invest-section__container
+      .invest-section__title.font-w-g-bold.font-s-40
+        | Какие вложения 
+        br.no-br
+        | вам понадобятся
+      .invest-section__sub-title.font-w-regular.font-s-18 Выберите размер вашего города и узнайте все условия партнерства
+      .swiper-invest
+        .invest-section__cards.swiper-wrapper
+          .invest-section__card.swiper-slide
+            .invest-section__card-header
+              .invest-section__card-num.font-w-bold.font-s-26 1
+              .font-w-extra-bold.font-s-22.color-white до 500 000 жителей
+            .invest-section__card-body
+              img.invest-section__card-img(src="images/invest-section-img1.jpg" loading="lazy" width="640" height="460" alt="image")
+              form.invest-section__form(data-feedback-form)
+                input.input.input--color-grey.invest-item(type="text" name="name" autocomplete="off" placeholder="Имя")
+                input.input.input--color-grey.invest-item(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+                button.btn.invest-item-btn(type="submit") Узнать
+          .invest-section__card.swiper-slide
+            .invest-section__card-header
+              .invest-section__card-num.font-w-bold.font-s-26 2
+              .font-w-extra-bold.font-s-22.color-white от 500 000 жителей
+            .invest-section__card-body
+              img.invest-section__card-img(src="images/invest-section-img2.jpg" loading="lazy" width="640" height="460" alt="image")
+              form.invest-section__form(data-feedback-form)
+                input.input.input--color-grey.invest-item(type="text" name="name" autocomplete="off" placeholder="Имя")
+                input.input.input--color-grey.invest-item(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+                button.btn.invest-item-btn(type="submit") Узнать
+          .invest-section__card.swiper-slide
+            .invest-section__card-header
+              .invest-section__card-num.font-w-bold.font-s-26 3
+              .font-w-extra-bold.font-s-22.color-white от 1 000 000 жителей
+            .invest-section__card-body
+              img.invest-section__card-img(src="images/invest-section-img3.jpg" loading="lazy" width="640" height="460" alt="image")
+              form.invest-section__form(data-feedback-form)
+                input.input.input--color-grey.invest-item(type="text" name="name" autocomplete="off" placeholder="Имя")
+                input.input.input--color-grey.invest-item(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+                button.btn.invest-item-btn(type="submit") Узнать
+        .invest-pagination.swiper-progress-invest
